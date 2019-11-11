@@ -1,0 +1,171 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+ul{
+    list-style:none;
+}
+
+h1{
+    border-bottom:3px solid black;
+    padding:20px 0;
+    margin-top: 0;
+}
+
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+    
+.modal-content{
+    background-color: white;
+    width: 500px;
+    margin: 40% auto;
+}
+
+
+header{
+    height:50px;
+    background-color: rgb(187, 184, 184);
+}
+
+.header-title{ 
+    h2{
+        font-size: 40px;
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+}
+
+.top-image{
+    height: 700px;
+    background-size: cover;
+    img{
+        filter: saturate();
+    }
+}
+
+.profile{
+    height:500px;
+    background-color: burlywood;
+    margin:0 auto;
+}
+.contents{
+    margin:0 auto;
+}
+
+.sample{
+    display: inline-block;
+    width:22%;
+    height:350px;
+    float: left;
+    margin-left:230px;
+    margin-right: 50px;
+    img{
+        border-radius: 10px;
+    }
+}
+.pro-list{
+    width:50%;
+    display: inline-block;
+    margin-top:50px;
+    li{
+        font-size:30px;
+        margin-bottom: 20px;
+    }
+}
+
+.need_info{
+    height: 300px;
+    padding-bottom: 100px;
+}
+
+.sns-form{
+    background-color:burlywood;
+    padding-bottom: 100px;
+}
+
+.titles{
+    margin-top:30px;
+}
+
+.skill{
+    height:300px;
+}
+.skill-icon{
+    display: block;
+    margin:auto;
+    li{
+        float: left;
+        text-align: center;
+        width: 25%;
+    }
+}
+
+.email{
+    input{
+        border:2px solid black;
+    }
+}
+
+.text-form{
+    textarea{
+        border:2px solid black;
+    }
+}
+.btn{
+   width:200px;
+   height: 30px;
+}
+
+.star{
+      margin-left: 50px;
+      float: left;
+}
+
+.html{position: relative;}
+.html:hover .sample2 {display: inline;}
+
+.python{position: relative;}
+.python:hover .sample2{ display: inline;}
+
+.ruby{position: relative;}
+.ruby:hover .sample2 {display: inline;}
+
+.c_lan{position: relative;}
+.c_lan:hover .sample2 {display: inline;}
+
+.sample2 {
+    display: none; 
+    position: absolute;
+    padding: 2px;
+    background-color: rgba(105, 231, 231, 0.75);
+    width:250px; 
+    height: 100px;
+    left : 13%; 
+    top : 100%;
+    margin-top : 12px;
+    animation: sample2Anime 2s linear;
+    border-radius: 12px;
+    p{
+        margin:0;
+    }
+
+}
+
+@keyframes sample2Anime{
+   100%{ color : black; background:rgba(105, 231, 231, 0.75) }
+    50%{ color : black; background:rgba(105, 231, 231, 0.75) }
+     0%{ color : white; background:white   }
+}
+
+
